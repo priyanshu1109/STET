@@ -1,0 +1,25 @@
+				        STET
+
+
+Present Scenario:- Presently,they verify the documents manually and also genertae the admit cards manually in which there are chances of error
+		   For payment they have only offine mode which need lot of manual intervention.So they are in a need of portal which will reduce
+		   manual intervention wherever possible.
+
+
+1.  Our portal will receive only digilocker documents as documents received from digilocker are treated as verified.
+    Other than that no other documents are acceptable.
+
+2.  Using text recognition our portal also verifies that document uploaded will belongs to that particular candidate or not
+    by matching the credentials in document with the credentials given by the user.
+
+3.  Our portal is going to provide the payment gateway which will reduce the manual intervention upto the great extent as now
+    they have only option of e-challan for payments.
+
+4.  Our portal is also capable of generating admit card automatically which will reduces the chances of human error.
+
+5.  Candidates are informed about each notifications through email and messages.
+
+6.  Our portal is also capable of releasing result.Admin have to just upload the file he received from omr checker and our app
+    will make the results and release it on the portal and also send the messages to the candidates.
+
+7.  Our portal is also capable of working in low internet connection as we are not using any framework.
