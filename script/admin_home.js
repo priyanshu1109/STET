@@ -23,9 +23,11 @@ capplication.onclick = function(){
 }
 
 admit.onclick = function(){
+	var co = 0
 	firebase.firestore().collection('users').get().then(function(querySnapshot) {
 			querySnapshot.forEach(function(doc) {
-				setCenter(doc.data().city1,doc.data().uid)
+				co = co + 1
+				setCenter(doc.data().city1,doc.data().uid,co)
 			});
 	})
 	firebase.firestore().collection('action').where("name","==","admit card").get().then(function(querySnapshot) {
@@ -37,20 +39,20 @@ admit.onclick = function(){
 	})
 }
 
-function setCenter(city1,uid){
+function setCenter(city1,uid,co){
 	firebase.firestore().collection('centers').where("name","==",city1).get().then(function(querySnapshot) {
 			querySnapshot.forEach(function(doc) {
 				if (doc.data().count>0)
 				{
 					firebase.firestore().collection('centers').doc(doc.id).update({
 						count : doc.data().count-1
-					}).then(() => updateUser(city1,uid,doc.data().centers))
+					}).then(() => updateUser(city1,uid,doc.data().centers,co))
 				}
 			});
 	})
 }
 
-function updateUser(city1,uid,centers){
+function updateUser(city1,uid,centers,co){
 	for (i=0;i<centers.length;i++ )
 	{
 		if(centers[i].count>0){
@@ -62,12 +64,9 @@ function updateUser(city1,uid,centers){
 			querySnapshot.forEach(function(doc) {
 				firebase.firestore().collection('users').doc(doc.id).update({
 					center : city1,
-					center_name : c
+					center_name : c,
+					roll_number : co
 				}).then(() => sendmail(doc.data().email));
-				/*$.ajax({
-					url: "send_admit_card.php?email="+doc.data().email,
-					type: "POST",
-				});*/
 			})
 	})
 }
