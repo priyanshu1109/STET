@@ -23,10 +23,17 @@ capplication.onclick = function(){
 }
 
 admit.onclick = function(){
-	var co = 0
-	firebase.firestore().collection('users').get().then(function(querySnapshot) {
+	var co1 = 0
+	var co2 = 0
+	firebase.firestore().collection('users').orderBy("examination_mode","asc").get().then(function(querySnapshot) {
 			querySnapshot.forEach(function(doc) {
-				co = co + 1
+				if(doc.data().paper_type=="Paper-1(Primary)"){
+					co1 = co1 + 1
+					var co = co1+10000
+				}else if(doc.data().paper_type=="Paper-2(Secondary)"){
+					co2 = co2 + 1
+					var co = co2+20000
+				}
 				setCenter(doc.data().city1,doc.data().uid,co)
 			});
 	})

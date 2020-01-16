@@ -19,5 +19,4 @@ login.onclick = function login(){
 			});
 			}
 	})
-
 }

@@ -28,9 +28,7 @@ function uploadAadhar(a){
 	var last_name = document.getElementById("last_name").value;
 	var text = "Aadhaar is a proof of identity not of citizenship To establish identity authenticate online This is electronically generated letter"
 	var father_name = document.getElementById("father_name").value;
-	var aadhar_number = document.
-		
-	getElementById("aadhar_number").value;
+	var aadhar_number = document.getElementById("aadhar_number").value;
 	var mother_name = document.getElementById("mother_name").value;
 	var dob = document.getElementById("dob").value;
 	var pin = document.getElementById("pincode").value;
@@ -46,6 +44,8 @@ function uploadAadhar(a){
 	var mobile_number = document.getElementById("mobile_number").value;
 	var education = document.getElementById("education").value;
 	var marks_type = document.getElementById("marks_type").value;
+	var paper_type = document.getElementById("paper_type").value;
+	var examination_type = document.getElementById("examination_mode").value;
 	var percentage = document.getElementById("percentage").value;
 	var sign = document.getElementById("upload_signature").value;
 	if (middle_name=" ")
@@ -139,9 +139,13 @@ function getPageText(pageNum, PDFDocumentInstance) {
 
 function addBioData(){
 	var form = document.getElementById("myform")
+	var Xpercentage = (Number(document.getElementById("Xtotal_obtained").value)/Number(document.getElementById("Xtotal_marks").value))*100;
+	var XIIpercentage = (Number(document.getElementById("XIItotal_obtained").value)/Number(document.getElementById("XIItotal_marks").value))*100;
 	firebase.firestore().collection('users').where("uid","==",uid).get().then(function(querySnapshot) {
 			if(querySnapshot.empty){
 				alert("You are not logged in!")
+			}else if(Xpercentage<60 || XIIpercentage<60){
+				alert("Sorry you are not fulfilling the eligibility criteria")	
 			}else{
 			querySnapshot.forEach(function(doc) {
 				firebase.firestore().collection('users').doc(doc.id).update({
@@ -168,8 +172,12 @@ function addBioData(){
 					aadhar : "aadhar.jpg",
 					profile : "profile.jpg",
 					sign : "sign.jpg",
+					paper_type : form.paper_type.value,
+					examination_mode : form.examination_mode.value,
 					percentage	: form.percentage.value,
-					status : "fees not paid"
+					status : "fees not paid",
+					Xpercentage : Xpercentage,
+					XIIpercentage : XIIpercentage
 				}).then(() => addDocuments())
 			});
 			}

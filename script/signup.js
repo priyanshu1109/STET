@@ -48,7 +48,8 @@ function sendCredentials(uid,email,password,size){
 					 type: "POST",
 					 //data: { email:email,password:password,application_no:application_no},
 					 success: function (response) {
-						 window.location.href = "login.html"
+						alert("Registered succesfully!!Check your email for login credentials!")
+						window.location.href = "login.html"
 					 }
 				});
 }
