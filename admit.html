@@ -1,212 +1,78 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>12</title>
-	<style type="text/css">
-		 th, td {
-			height: 25px;
-			border: 1px solid black;
-}
-td{
-	font-size: 25px;
-	color: #020000;
-	text-align:center;
-}
-
-	</style>
-
-</head>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-<body>
-	<div class="container-fluid";">
-	<div class="row">
-	<div class="col-md-4">
-	<img src="images/logo.jpg" style="width: 150px;
-	height: 150px;
-	margin: 10px 10px 10px 10px;">
-	</div>
-	<div class="col-md">
-	<p style="font-size:35px;margin:0px auto;">SIKKIM BOARD OF EXAMINATION</p>
-	<p style="font-size:30px;margin-left:10px;">
-		STATE TEACHER ELIGIBILTY TEST-2020
-	</p>
-	<p style="font-size:25px;
-			 margin-left:20px;">
-		address address address,address , address.
-	</p>
-	</div>
-	</div>
-	<div id="ADMITCARD" style="width: 100%;
-	height: 50px;
-	border-style:solid;
-	border-width: 3px;
-	border-left: 0;
-	border-right: 0;
-	text-align: center;
-	border-collapse: collapse;">
-		<p style="font-size: 30px;"><u>ADMIT CARD</u></p>
-	</div>
-	<div id="divphoto" style="width=100%;
-	height: 300px;
-	">
-	<div style="width: 200px;
-	height: 300px;
-	float: right;
-	margin-right: 50px;
-	margin-top: 10px;
-	">
-	<img src="idphoto.jpg" style="width: 200px;
-	height: 250px;
-	" id="idphoto">
-	<img src="sign.jpg" style="width:200px;
-		height: 50px;
-		 " id="idsign">
-	</div>	
-	</div>
-	<br/>
-	<div style="width: 100%;
-	height: auto;">
-		<table style="width:100%;
-		height: auto;">
-			
-			<tr style="width: 70%;">
-				<td style="width: 30%; background-color: #686868">NAME
-				</td>
-				<td style="width: 70%;" id="name">
-				</td>
-				
-				
-			</tr><tr style="width: 70%;">
-				<td style="width: 30%; background-color: #686868">ROLL NO.
-				</td>
-				<td style="width: 70%;" id="roll_no">
-				</td>
-				
-				
-			</tr><tr style="width: 70%;">
-				<td style="width: 30%; background-color: #686868">DATE OF BIRTH
-				</td>
-				<td style="width: 70%;" id="DOB">
-				</td>
-				
-				
-			</tr>
-			<tr>
-				<td style="width: 30%; background-color: #686868">VERNACULAR OPTION
-				</td>
-				<td style="width: 70%;" id="vernacular option">
-				</td>
-			</tr>
-			<tr style="width: 70%;">
-				<td style="width: 30%; background-color: #686868">LEVEL
-				</td>
-				<td style="width: 70%;" id="level">
-				</td>
-				
-				
-			</tr>
-			</tr><tr style="width: 70%;">
-				<td style="width: 30%; background-color: #686868">MOTHER'S NAME
-				</td>
-				<td style="width: 70%;" id="mothers_name1">
-				</td>
-				
-				
-			</tr>
-			</table>
-			<table style="width:100%;
-		height: auto;">
-		    <tr>
-		    	<td style="font-size: 25px;
-		    	width: 33%;
-		    	background-color: #686868">
-		    		DATE OF EXAM
-		    		
-		    	</td>
-		    	<td style="font-size: 25px;
-		    	width: 33%;
-		    	background-color: #686868">
-		    		VENUE
-		    		
-		    	</td>
-                <td style="font-size: 25px;
-                width: 33%;
-                background-color: #686868">
-		    		TIMING
-		    	</td>
-
-
-
-		    </tr>
-		    <tr>
-		    	<td style="font-size: 25px;
-		    	width: 33%;"
-		    	>
-		    	
-		    		
-		    	</td>
-		    	<td style="font-size: 25px;
-		    	width: 33%;"
-		    	>
-		    		
-		    		
-		    	</td>
-                <td style="font-size: 25px;
-                width: 33%;
-                ">
-		    	
-		    	</td>
-
-
-
-		    </tr>
-		    	
-		   
-			
-		</table>
-
-
-	<div style="
-	width: 100%;
-	height: 200px;
-	border-style: solid;	border-top: 0;
-	border-right: 0;
-	border-left: 0; ">
-		<div style="width: 400px;
-		height: 200px;
-		
-		float: right;
-		margin: 50px;
-		">
-		<div style="width: 395px;
-		height: 100px;
-		"><img src="sign.jpg" style="width: 395px;
-		height: 100px;">
-			
-
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+	<script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.0.943/build/pdf.min.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+	<link rel="stylesheet" href="style/main.css">
+	<link rel="stylesheet" href="style/admit.css">
+	<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+	<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-analytics.js"></script>
+  <title>Document</title>
+ </head>
+ <body>
+	<div class="container-fluid">
+	<!---          HEADER-START          ------->
+		<div class="row">
+			<div class="col-sm-3">
+				<img src="images/logo.jpg" id="logo" />
+			</div>
+			<div class="col-lg">
+				<h2 style="text-align:center;margin:0px auto;">STET-2020</h2>
+			</div>
+			<div class="col-sm-3">
+				<div class="row">
+					<div class="col-sm-5">
+					<button type="button" class="btn btn-primary">Admin Login</button>
+					</div>
+					<div class="col-sm-5">
+					<button type="button" class="btn btn-primary">Login</button>
+					</div>
+				</div>
+			</div>
 		</div>
-		<p style="font-size: 20px;
-		text-align: center;"> CONTROLLER OF EXAMINATION
-		</p>
-
-			
-		</div>
-        
-
-		
-
-	</div>
-	<p style="font-size: 30px;"><u>DIRECTION FOR EXAMINAITON</u>:-</p>
-	<p>1.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-<p>2.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p><p>3.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p><p>4.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p><p>5.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p><p>6.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p><p>7.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-</div>
-
-</div>
-
-
-
-
-
-
-</body>
+		<nav class="navbar navbar-expand-lg navbar-dark" style="background-color:blue;">
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+				  <li class="nav-item active">
+					<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="#" style="color:white">Contact Us</a>
+				  </li>
+				</ul>
+			  </div>
+			</nav>
+	<!---                Header End                 ---->
+	  <div class="wrapper">
+    <div class="form-signin">       
+      <h2 class="form-signin-heading">Login</h2><br />
+      <input type="text" class="form-control" name="username" placeholder="Application Number" required="" autofocus="" id="admit_app_no"/><br />
+      <input type="password" class="form-control" name="password" placeholder="Password" required="" id="admit_pass"/>      
+      <br /><br />
+      <button class="btn btn-lg btn-primary btn-block" id="admit_login">Login</button>   
+    </div>
+  </div>
+	</div>  <!-- container-fluid -->
+ </body>
+ <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script src="script/init.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-firestore.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-storage.js"></script>
+	<script src = "script/admit.js"></script>
 </html>
