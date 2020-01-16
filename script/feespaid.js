@@ -33,7 +33,7 @@ if (errorMessage=="undefined"){
 	document.getElementById("top_status").innerHTML = "Payment Failed.Try Aganin?"	
 	document.getElementById("print").innerHTML = "Try Again"
 	document.getElementById("print").onclick = function(){
-		window.location.href = "payfee.html?user_id="+uid+"&application_no="+application_no
+		window.location.href = "payfee.php?user_id="+uid+"&application_no="+application_no
 	}
 }
 

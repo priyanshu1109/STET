@@ -5,7 +5,7 @@ firebase.auth().onAuthStateChanged(function(user) {
 			querySnapshot.forEach(function(doc) {
 				var status = doc.data().status
 				if (status=="registered"){
-				window.location.href = "already_registered.html"
+				window.location.href = "already_registered.php"
 				}else{
 					
 				}
@@ -13,7 +13,7 @@ firebase.auth().onAuthStateChanged(function(user) {
 	   });	
   }else {
 	  alert("You are signed out");
-	  window.location.href = "login.html"
+	  window.location.href = "login.php"
   }
 });
 
@@ -196,13 +196,13 @@ function addDocuments(){
 		snapshot.docs.forEach(doc=>{
 			window.application_no = doc.data().application_no	
 		})
-	}).then(() => window.location.href = "payfee.html?user_id="+uid+"&application_no="+application_no)	
+	}).then(() => window.location.href = "payfee.php?user_id="+uid+"&application_no="+application_no)	
 }
 
 var logout = document.getElementById("logout")
 
 logout.onclick = function(){
 	firebase.auth().signOut().then(function(){
-		window.location.href = "index.html"
+		window.location.href = "index.php"
 	});
 }

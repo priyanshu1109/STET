@@ -49,7 +49,7 @@ function sendCredentials(uid,email,password,size){
 					 //data: { email:email,password:password,application_no:application_no},
 					 success: function (response) {
 						alert("Registered succesfully!!Check your email for login credentials!")
-						window.location.href = "login.html"
+						window.location.href = "login.php"
 					 }
 				});
 }

@@ -38,7 +38,7 @@ $paytmParams = array(
 	"TXN_AMOUNT" => "1",
     
 	/* on completion of transaction, we will send you the response on this URL */
-	"CALLBACK_URL" => "http://127.0.0.1/sih_main/feespaid.php?application_no=".$_GET["application_no"]."&user_id=".$_GET["user_id"]
+	"CALLBACK_URL" => "http://127.0.0.1/sih_main/.git/feespaid.php?application_no=".$_GET["application_no"]."&user_id=".$_GET["user_id"]
 );
 
 /**

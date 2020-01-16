@@ -1,3 +1,6 @@
+<?php
+	include("top.php");
+?>
 <!doctype html>
 <html lang="en">
  <head>
@@ -23,37 +26,7 @@
  </head>
  <body>
 	<div class="container-fluid">
-	<!---          HEADER-START          ------->
-		<div class="row">
-			<div class="col-sm-3">
-				<img src="images/logo.jpg" id="logo" />
-			</div>
-			<div class="col-lg">
-				<h2 style="text-align:center;margin:0px auto;">STET-2020</h2>
-			</div>
-			<div class="col-sm-3">
-				<div class="row">
-					<div class="col-sm-5">
-					<button type="button" class="btn btn-primary">Admin Login</button>
-					</div>
-					<div class="col-sm-5">
-					<button type="button" class="btn btn-primary">Login</button>
-					</div>
-				</div>
-			</div>
-		</div>
-		<nav class="navbar navbar-expand-lg navbar-dark" style="background-color:blue;">
-			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav mr-auto">
-				  <li class="nav-item active">
-					<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-				  </li>
-				  <li class="nav-item">
-					<a class="nav-link" href="#" style="color:white">Contact Us</a>
-				  </li>
-				</ul>
-			  </div>
-			</nav>
+	
 	<!---                Header End                 ---->
 	  <div class="wrapper">
     <div class="form-signin">       

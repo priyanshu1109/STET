@@ -10,7 +10,7 @@ login.onclick = function login(){
 			querySnapshot.forEach(function(doc) {
 				var email = doc.data().email;
 				firebase.auth().signInWithEmailAndPassword(email, password)
-				.then(() => window.location.href = 'form.html')	
+				.then(() => window.location.href = 'form.php')	
 				.catch(function(error) {
 					var errorCode = error.code;
 					var errorMessage = error.message;

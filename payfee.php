@@ -1,3 +1,6 @@
+<?php
+	include("top.php");
+?>
 <!doctype html>
 <html lang="en">
  <head>
@@ -14,7 +17,9 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<!-- The core Firebase JS SDK is always required and must be listed first -->
 	<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
-	<link rel="stylesheet" href="../style/main.css">
+	<link rel="stylesheet" href="style/main.css">
+	
+</title><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 	<!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
 	<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-analytics.js"></script>
@@ -23,63 +28,40 @@
  <body>
 	<div class="container-fluid">
 	<!---          HEADER-START          ------->
-		<div class="row">
-			<div class="col-sm-3">
-				<img src="../images/logo.jpg" id="logo" />
-			</div>
-			<div class="col-lg">
-				<h2 style="text-align:center;margin:0px auto;">STET-2020</h2>
-			</div>
-			<div class="col-sm-3">
-				<div class="row">
-					<div class="col-sm-5">
-					<button type="button" class="btn btn-primary">Admin Login</button>
-					</div>
-					<div class="col-sm-5">
-					<button type="button" class="btn btn-primary">Login</button>
-					</div>
-				</div>
-			</div>
-		</div>
-		<nav class="navbar navbar-expand-lg navbar-dark" style="background-color:blue;">
-			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav mr-auto">
-				  <li class="nav-item active">
-					<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-				  </li>
-				  <li class="nav-item">
-					<a class="nav-link" href="#" style="color:white">Contact Us</a>
-				  </li>
-				</ul>
-			  </div>
-			</nav>
-	<!---                Header End                 ---->
+		<!---                Header End                 ---->
+	<div class="container1">
+	<ul class="progressbar">
+	<li class="active">Fill Form</li>
+		<li class="active">Payment</li>
+		<li>Registration completed</li>
+	</ul>
+	</div>
+	<table style="margin:0px auto;
+	border: 2px solid blue;
+	margin-top:100px;">
+		<tr>
+			<td style="width:700px;text-align:center;border:1px solid blue;">Application Fee</td>
+			<td style="width:350px;text-align:center;border:1px solid blue;">1</td>
+		</tr>
+		<tr>
+			<td style="width:700px;text-align:center;border:1px solid blue;">SGST</td>
+			<td style="width:350px;text-align:center;border:1px solid blue;">0</td>
+		</tr>
+		<tr>
+			<td style="width:700px;text-align:center;border:1px solid blue;">CGST</td>
+			<td style="width:350px;text-align:center;border:1px solid blue;">0</td>
+		</tr>
+		<tr>
+			<td style="width:700px;text-align:center;border:1px solid blue;">Service Fee</td>
+			<td style="width:350px;text-align:center;border:1px solid blue;">0</td>
+		</tr>
+		<tr>
+			<th style="width:700px;text-align:center;border:2px solid blue;">TOTAL</th>
+			<th style="width:350px;text-align:center;border:2px solid blue;">1</th>
+		</tr>
+	</table>
 	<div class="row">
-			<div class="col-md">
-				<div class="row" id="notice">
-					<h4 style="margin:0px auto;color:white;">ADMIN LOGIN</h4>
-				</div>
-				<div class="row" id="login-bg">
-					<div class="login_form">
-					<!--<form>-->
-					  <div class="form-group">
-						<label for="exampleInputEmail1">Email Id</label>
-						<input type="text" class="form-control" id="email" aria-describedby="application_noHelp" autocomplete="application_no">
-					  </div>
-					  <div class="form-group">
-						<label for="exampleInputPassword1">Password</label>
-						<input type="password" class="form-control" id="Password2" />
-					  </div>
-					  <div class="form-group form-check">
-						<input type="checkbox" class="form-check-input" id="Check1">
-						<label class="form-check-label" for="exampleCheck1">Check me out</label>
-					  </div>
-					  <button type="submit" class="btn btn-primary" id="login1">LOGIN</button>
-					<!--</form>-->
-					</div>
-				</div>
-
-			</div>
+		<button class="btn btn-primary" style="margin:0px auto;margin-top:10px;width:100px;" id="pay">Pay</button>
 	</div>
 	</div>  <!-- container-fluid -->
  </body>
@@ -87,9 +69,24 @@
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-	<script src="../script/init.js"></script>
+	<script src="script/init.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-auth.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-firestore.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-storage.js"></script>
-	<script src="../script/admin.js"></script>
- </html>
+ <script src="script/form.js"></script>
+ <script>
+	function getUrlVars() {
+		var vars = {};
+		var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+			vars[key] = value;
+		});
+		return vars;
+	}
+	var application_no = decodeURIComponent(getUrlVars()["application_no"])
+	var user_id = decodeURIComponent(getUrlVars()["user_id"])
+	var pay = document.getElementById("pay")
+	pay.onclick = function(){
+		window.location.href = "pay.php?application_no="+application_no+"&user_id="+user_id
+	}
+ </script>
+</html>

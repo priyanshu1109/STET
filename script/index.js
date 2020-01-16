@@ -3,7 +3,7 @@ var db = firebase.firestore()
 db.collection("notice").orderBy("date","desc").get().then(function(querySnapshot) {
     querySnapshot.forEach(function(doc) {
         // doc.data() is never undefined for query doc snapshots
-        var code = `<li><a href="#">`+doc.data().title+`</li><a><hr/>`
+        var code = `<li><a href="#">`+doc.data().title+`</li><a>`
 		$("#notice-list").append(code);
 		console.log(doc.id, " => ", doc.data());
     });
@@ -16,16 +16,16 @@ db.collection("action").where("status","==","running").get().then(function(query
 		var name = doc.data().name
 		if (name=="application")
 		{
-			var n1 = "form.html"
+			var n1 = "form.php"
 		}else if (name=="admit card")
 		{
-			var n1 = "admit.html"
+			var n1 = "admit.php"
 		}
 		else if (name=="result")
 		{
-			var n1 = "result.html"
+			var n1 = "result.php"
 		}
-		var code = `<a href="${n1}"  class="btn btn-primary" id="fill_form">${message}</a>`
+		var code = `<li class="active"><a href="${n1}" id="fill_form">${message}</a></li>`
 		$("#button").append(code);
 		console.log(doc.id, " => ", doc.data());
     });
