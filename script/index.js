@@ -14,10 +14,10 @@ db.collection("action").where("status","==","running").get().then(function(query
         // doc.data() is never undefined for query doc snapshots
 		var message = doc.data().message
 		var name = doc.data().name
-		if (name=="application")
+		if (name=="Application Form")
 		{
 			var n1 = "form.php"
-		}else if (name=="admit card")
+		}else if (name=="Admit Card")
 		{
 			var n1 = "admit.php"
 		}
