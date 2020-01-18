@@ -35,9 +35,6 @@ function uploadAadhar(a){
 	var city = document.getElementById("city").value;
 	var state = document.getElementById("city").state;
 	var address = document.getElementById("address").value;
-	var city1 = document.getElementById("city1").value;
-	var city2 = document.getElementById("city2").value;
-	var city3 = document.getElementById("city3").value;
 	var gender = document.getElementById("gender").value;
 	var religion = document.getElementById("religion").value;
 	var caste = document.getElementById("caste").value;
@@ -48,12 +45,7 @@ function uploadAadhar(a){
 	var examination_type = document.getElementById("examination_mode").value;
 	var percentage = document.getElementById("percentage").value;
 	var sign = document.getElementById("upload_signature").value;
-	if (middle_name=" ")
-	{
-		var name = first_name+middle_name+last_name;
-	}else{
-		var name = first_name+" "+middle_name+" "+last_name;
-	}
+	var name = first_name+" "+last_name;
 	pdfjsLib.getDocument(a).then(function (pdf) {
 		var pdfDocument = pdf;
 		var pagesPromises = [];
@@ -150,7 +142,6 @@ function addBioData(){
 			querySnapshot.forEach(function(doc) {
 				firebase.firestore().collection('users').doc(doc.id).update({
 					first_name : form.first_name.value,
-					middle_name : form.middle_name.value,
 					last_name : form.last_name.value,
 					father_name : form.father_name.value,
 					aadhar_number : form.aadhar_number.value,
@@ -160,12 +151,7 @@ function addBioData(){
 					city : form.city.value,
 					state : form.state.value,
 					address : form.address.value,
-					city1 : form.city1.value,
-					city2 : form.city2.value,
-					city3 : form.city3.value,
 					gender : form.gender.value,
-					religion : form.religion.value,
-					caste : form.caste.value,
 					mobile_number : form.mobile_number.value,
 					education : form.education.value,
 					marks_type : form.marks_type.value,

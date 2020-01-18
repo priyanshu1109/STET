@@ -60,63 +60,35 @@
     </div>
 	<div class="panel-body">
 		<div class="row">
-			<div class="col-md-4 col-sm-4">
+			<div class="col-md col-sm">
 				<div class="form-group">
 					<input type="text" class="form-control" placeholder="First Name" id="first_name" name="first_name" required/>
                 </div>
 			</div>
-			<div class="col-md-4 col-sm-4">
-				<div class="form-group">
-					<input type="text"  placeholder="Middle Name" class="form-control" id="middle_name" name="middle_name">
-				</div>  
-			</div>
-			<div class="col-md-4 col-sm-4">
+			<div class="col-md col-sm">
 				<div class="form-group">
 					<input type="text"  placeholder="Last Name" class="form-control" id="last_name" name="last_name" required>
 				</div>  
 			</div>
 			</div>
 			<div class="row">
-			<div class="col-md col-sm">
+			<div class="col-md-4 col-sm-4">
 				<div class="form-group">
 					<input type="text"  placeholder="Father's name" class="form-control" name="father_name" id="father_name" required>
 				</div>  
 			</div>
-			<div class="col-md col-sm">
+			<div class="col-md-4 col-sm-4">
 				<div class="form-group">
 					<input type="text"  placeholder="Mother's name" class="form-control" name="mother_name" id="mother_name" required>
 				</div>  
 			</div>
-			</div>
-			<div class="row">
-			<div class="col-md col-sm">
+			<div class="col-md-4 col-sm-4">
 				<div class="form-group">
 					<select class="form-control" name="gender" id="gender" required>
 							<option>Gender</option>
 							<option>Male</option>
 							<option>Female</option>
 							<option>Other</option>
-						</select>
-				</div>  
-			</div>
-			<div class="col-md col-sm">
-				<div class="form-group">
-					<select class="form-control" name="religion" id="religion" required>
-							<option>Religion</option>
-							<option>Hindu</option>
-							<option>Muslim</option>
-							<option>Other</option>
-						</select>
-				</div>  
-			</div>
-			<div class="col-md col-sm">
-				<div class="form-group">
-					<select class="form-control" name="caste" id="caste" required>
-							<option>Category</option>
-							<option>General</option>
-							<option>ST</option>
-							<option>SC</option>
-							<option>OBC</option>
 						</select>
 				</div>  
 			</div>
