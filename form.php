@@ -236,9 +236,15 @@
 					</div>
 				 </div>
 			</div>
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Other Details<i class="fa fa-caret-down"></i></a>
+				</h4>
+			</div>
+			<div class="row">
 			<div class="col-md-4 col-sm-4">
 					<div class="form-group">
-						<select class="form-control" name="education" id="education" required>
+						<select class="form-control" name="impaired" id="impaired" required>
 							<option>Are you orthopedically/Locomotor impaired</option>
 							<option>Yes</option>
 							<option>No</option>
@@ -247,13 +253,14 @@
 				 </div>
 				 <div class="col-md-4 col-sm-4">
 					<div class="form-group">
-						<select class="form-control" name="marks_type" id="marks_type" required>
+						<select class="form-control" name="appeared" id="appeared" required>
 							<option>Have you appeared for STET before</option>
 							<option>Yes</option>
 							<option>No</option>
 						</select>
 					</div>
 				 </div>
+			</div>
 			<div class="panel-heading">
 				<h4 class="panel-title">
 					<a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Upload documents<i class="fa fa-caret-down"></i></a>

@@ -24,7 +24,6 @@ $('#upload_aadhar').change( function(event) {
 
 function uploadAadhar(a){
 	var first_name = document.getElementById("first_name").value;
-	var middle_name = document.getElementById("middle_name").value;
 	var last_name = document.getElementById("last_name").value;
 	var text = "Aadhaar is a proof of identity not of citizenship To establish identity authenticate online This is electronically generated letter"
 	var father_name = document.getElementById("father_name").value;
@@ -36,8 +35,6 @@ function uploadAadhar(a){
 	var state = document.getElementById("city").state;
 	var address = document.getElementById("address").value;
 	var gender = document.getElementById("gender").value;
-	var religion = document.getElementById("religion").value;
-	var caste = document.getElementById("caste").value;
 	var mobile_number = document.getElementById("mobile_number").value;
 	var education = document.getElementById("education").value;
 	var marks_type = document.getElementById("marks_type").value;
@@ -45,6 +42,8 @@ function uploadAadhar(a){
 	var examination_type = document.getElementById("examination_mode").value;
 	var percentage = document.getElementById("percentage").value;
 	var sign = document.getElementById("upload_signature").value;
+	var appeared = document.getElementById("appeared").value;
+	var impaired = document.getElementById("impaired").value;
 	var name = first_name+" "+last_name;
 	pdfjsLib.getDocument(a).then(function (pdf) {
 		var pdfDocument = pdf;
@@ -163,7 +162,9 @@ function addBioData(){
 					percentage	: form.percentage.value,
 					status : "fees not paid",
 					Xpercentage : Xpercentage,
-					XIIpercentage : XIIpercentage
+					XIIpercentage : XIIpercentage,
+					impaired : form.impaired.value,
+					appeared : form.appeared.value
 				}).then(() => addDocuments())
 			});
 			}
