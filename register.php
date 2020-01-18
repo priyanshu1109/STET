@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="style/style.css" />
     <link rel="stylesheet" type="text/css" href="style/responsive.css" />
 	<script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
-    <title>Part Mart</title>
+    <title>STET-2020</title>
 </head>
 <body>
     
