@@ -23,24 +23,29 @@
                 </div>
                 <div class="col-md-6 col-sm-6">
                     <div class="login-frm">
-                        <h1>LOGIN</h1>
+                        <h1>Register</h1>
 
                   <!--      <form> -->
                             <div class="form-group">
-                                <label><i class="fa fa-user"></i>Application number</label>
-                                <input type="email" name="" placeholder="" class="form-control" id="application_no">
+                                <label><i class="fa fa-user"></i>Username</label>
+                                <input type="email" name="" placeholder="" class="form-control" id="username">
+                            </div>
+							<div class="form-group">
+                                <label><i class="fa fa-user"></i>Email</label>
+                                <input type="email" name="" placeholder="" class="form-control" id="Email">
+								<label>Email will be sent to this mail</label>
                             </div>
                             <div class="form-group">
-                                <label><i class="fa fa-lock"></i> Password</label>
-                                <input type="Password" name="" placeholder="" class="form-control" id="Password1">
+                                <label><i class="fa fa-lock"></i>Create A Password</label>
+                                <input type="Password" name="" placeholder="" class="form-control" id="Password">
                             </div>
 
                           
 
-                            <button class="btn-main" id="login">Login</button>
+                            <button class="btn-main" id="register">Register</button>
 
                             <div class="login-we">
-                                <p>New User?<a href="register.php">Sign Up</a></p>
+                                <p>Already a User?<a href="login.php">Sign In</a></p>
                             </div>
                         <!--</form> -->
                     </div>
@@ -58,6 +63,6 @@
 	<script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-auth.js"></script>
 	 <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-firestore.js"></script>
 	<script src="script/init.js"></script>
-	<script src="script/login.js"></script>
+	<script src="script/signup.js"></script>
 </body>
 </html>
