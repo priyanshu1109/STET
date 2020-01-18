@@ -9,6 +9,16 @@ db.collection("notice").orderBy("date","desc").get().then(function(querySnapshot
     });
 });
 
+db.collection("constants").get().then(function(querySnapshot) {
+    querySnapshot.forEach(function(doc) {
+        // doc.data() is never undefined for query doc snapshots
+        var about = doc.data().about
+		document.getElementById("about").innerHTML = about;
+		console.log(doc.id, " => ", doc.data());
+    });
+});
+
+
 db.collection("action").where("status","==","running").get().then(function(querySnapshot) {
     querySnapshot.forEach(function(doc) {
         // doc.data() is never undefined for query doc snapshots

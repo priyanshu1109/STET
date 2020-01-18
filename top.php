@@ -48,7 +48,7 @@
                
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">            
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" >            
             <ul id="ctl00_TopLinks_BLinks" class="nav navbar-nav navbar-left" style="display:inline;"><li> <a target='_self' href='index.html'>HOME</a></li><li> <a target='_self' href='https://ctet.nic.in/CMS/Handler/FileHandler.ashx?i=File&ii=171&iii=Y'>CONTACT US</a></li></ul>
 
         </div>

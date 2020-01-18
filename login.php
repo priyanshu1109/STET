@@ -31,7 +31,7 @@
 		<div class="row">
 			<div class="col-md-6">
 				<div class="row" id="notice">
-					<h4 style="margin:0px auto;color:white;">LOGIN</h4>
+					<h4 style="margin:0px auto;color:white;margin-top:10px;margin-bottom:10px;"><b>LOGIN</b></h4>
 				</div>
 				<div class="row" id="login-bg">
 					<div class="login_form">
@@ -44,14 +44,15 @@
 						<label for="exampleInputPassword1">Password</label>
 						<input type="password" class="form-control" id="Password1" />
 					  </div>
-					  <button type="submit" class="btn btn-primary" id="login">Submit</button>
+					  <button type="submit" class="btn btn-primary" id="login">Login</button>
+					
 					</div>
 				</div>
 
 			</div>
 			<div class="col-md-6">
 				<div class="row" id="notice">
-					<h4 style="margin:0px auto;color:white;">NEW USER</h4>
+					<h4 style="margin:0px auto;color:white;margin-top:10px;margin-bottom:10px;"><b>NEW USER</b></h4>
 				</div>
 				<div class="row" id="login-bg">
 					<div class="login_form">

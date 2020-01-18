@@ -262,7 +262,7 @@ a {
 
 .home_icon {
     width: 34px;
-    background: url(../../Images/home_icon_g.png) no-repeat 0px 2px !important;
+    background: black;
     text-indent: -1000px;
     padding: 0px 5px !important;
     border: none !important;

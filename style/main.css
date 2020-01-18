@@ -18,10 +18,9 @@ body {
 }
 
 #notice{
-	background-color:blue;
+	background-color:#428ae3;
 	margin:0px auto;
 	margin-top:20px;
-	border-radius:5px;
 }
 #about{
 	margin:0px auto;
@@ -36,7 +35,6 @@ body {
 #login{
 	width:60%;
 	margin:0px auto;
-	border-radius:15px;
 	margin-top:20px;
 }
 #fill_form{
@@ -67,8 +65,7 @@ body {
 	height:530px;
 	margin:0px auto;
 	width:100%;
-	background-color:#E8FBFA;
-	border:1px solid black;
+	background-color:white;
 }
 
 .login_form{
@@ -155,4 +152,8 @@ background-color:#27ae60;
 	margin:0px auto;
 	border-radius:15px;
 	margin-top:20px;
+}
+
+.form-group label{
+	color:green;
 }

@@ -43,7 +43,7 @@
 	<!---          HEADER-START          ------->
 	<!---                Header End                 ---->
 	<div class="row">
-		<h6 style="margin:0px auto;color:red;">Please write details similar to aadhar card</h6>
+		<h6 style="margin:0px auto;color:red;" class="blinking">Please write details similar to aadhar card</h6>
 	</div>
 	<div class="container1">
 	<ul class="progressbar">
@@ -52,7 +52,7 @@
 		<li>Registration completed</li>
 	</ul>
 	</div>
-	<form id="myform">
+	<form id="myform" style="margin-left:128px;margin-right:128px;">
 	<div class="panel-heading">
 		<h4 class="panel-title">
 			<a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Personal Details </a>
@@ -112,7 +112,7 @@
 			<div class="col-md col-sm">
 				<div class="form-group">
 					<select class="form-control" name="caste" id="caste" required>
-							<option>Caste</option>
+							<option>Category</option>
 							<option>General</option>
 							<option>ST</option>
 							<option>SC</option>
@@ -160,45 +160,6 @@
 				</div>  
 			</div>
 			</div>
-			<div class="panel-heading">
-				<h4 class="panel-title">
-					<a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Examination centre<i class="fa fa-caret-down"></i></a>
-				</h4>
-			</div>
-			<div class="panel-body">
-				<div class="row">
-				<div class="col-md-4 col-sm-4">
-					<div class="form-group">
-						<select class="form-control" name="city1" id="city1" required>
-							<option>Preference city 1</option>
-							<option>Jabalpur</option>
-							<option>Bhopal</option>
-							<option>Indore</option>
-						</select>
-					</div>
-				 </div>
-				<div class="col-md-4 col-sm-4">
-					<div class="form-group">
-						<select class="form-control" name="city2" id="city2" required>
-							<option>Preference city 2</option>
-							<option>Jabalpur</option>
-							<option>Bhopal</option>
-							<option>Indore</option>
-						</select>
-					</div>
-				 </div>
-				 <div class="col-md-4 col-sm-4">
-					<div class="form-group">
-						<select class="form-control" name="city3" id="city3" required>
-							<option>Preference city 3</option>
-							<option>Jabalpur</option>
-							<option>Bhopal</option>
-							<option>Indore</option>
-						</select>
-					</div>
-				 </div>
-			</div>
-	</div>
 			<div class="panel-heading">
 				<h4 class="panel-title">
 					<a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Paper Details<i class="fa fa-caret-down"></i></a>
@@ -303,6 +264,24 @@
 					</div>
 				 </div>
 			</div>
+			<div class="col-md-4 col-sm-4">
+					<div class="form-group">
+						<select class="form-control" name="education" id="education" required>
+							<option>Are you orthopedically/Locomotor impaired</option>
+							<option>Yes</option>
+							<option>No</option>
+						</select>
+					</div>
+				 </div>
+				 <div class="col-md-4 col-sm-4">
+					<div class="form-group">
+						<select class="form-control" name="marks_type" id="marks_type" required>
+							<option>Have you appeared for STET before</option>
+							<option>Yes</option>
+							<option>No</option>
+						</select>
+					</div>
+				 </div>
 			<div class="panel-heading">
 				<h4 class="panel-title">
 					<a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Upload documents<i class="fa fa-caret-down"></i></a>
