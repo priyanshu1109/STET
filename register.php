@@ -18,7 +18,7 @@
             <div class="login-row">
                 <div class="col-md-6 col-sm-6">
                     <div class="login-img">
-                        <img src="images/login-img.svg" alt="">
+                        <img src="images/Main-Logo.png" alt="">
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-6">

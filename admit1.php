@@ -15,6 +15,8 @@ td{
 
 	</style>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
 <!-- The core Firebase JS SDK is always required and must be listed first -->
 	<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.10.1/css/mdb.min.css" rel="stylesheet">
@@ -60,7 +62,7 @@ td{
 	margin-right: 50px;
 	margin-top: 10px;
 	">
-	<img src="idphoto.jpg" style="width: 200px;
+	<img style="width: 200px;
 	height: 250px;
 	" id="idphoto">
 	<img src="sign.jpg" style="width:200px;
@@ -75,28 +77,22 @@ td{
 		height: auto;">
 			
 			<tr style="width: 70%;">
-				<td style="width: 30%; background-color: #686868">NAME
-				
+				<td style="width: 30%; background-color: #686868;">NAME
 				</td>
-				<td style="width: 70%;" id="name">
-				
-				</td>
-				
-				
-			</tr><tr style="width: 70%;">
-				<td style="width: 30%; background-color: #686868">ROLL NO.
+				<td style="width: 70%;" id="name1"></td>
+			</tr>
+			<tr style="width: 70%;">
+				<td style="width: 30%; background-color: #686868;">ROLL NO.
 				</td>
 				<td style="width: 70%;" id="roll_no">
-				</td>
-				
-				
-			</tr><tr style="width: 70%;">
+				</td>	
+			</tr>
+			<tr style="width: 70%;">
 				<td style="width: 30%; background-color: #686868">DATE OF BIRTH
 				</td>
 				<td style="width: 70%;" id="DOB">
 				</td>
-				
-				
+	
 			</tr>
 			<tr>
 				<td style="width: 30%; background-color: #686868">VERNACULAR OPTION
@@ -146,20 +142,15 @@ td{
 		    <tr>
 		    	<td style="font-size: 25px;
 		    	width: 33%;"
-		    	>
-		    	
-		    		
+		    	id="exam_date"> 		
 		    	</td>
 		    	<td style="font-size: 25px;
 		    	width: 33%;"
-		    	id="venue">
-		    		
-		    		
+		    	id="venue">	
 		    	</td>
                 <td style="font-size: 25px;
                 width: 33%;
-                ">
-		    	
+                " id="timing">
 		    	</td>
 
 
@@ -186,7 +177,7 @@ td{
 		<div style="width: 395px;
 		height: 100px;
 		"><img src="sign.jpg" style="width: 395px;
-		height: 100px;">
+		height: 100px;" id="idsign">
 			
 
 		</div>
@@ -207,8 +198,10 @@ td{
 </div>
 
 </div>
-<script src="script/admit1.js"></script>
-<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-firestore.js"></script>
 <script src="script/init.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-storage.js"></script>
+<script src="script/admit1.js"></script>
 </body>
 </html>

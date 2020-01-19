@@ -17,6 +17,8 @@
 	<!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
 	<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-analytics.js"></script>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.13.5/xlsx.full.min.js"></script>
+
   <title>STET</title>
  </head>
  <body>
@@ -53,8 +55,8 @@
 		</div>
 		<div class="row">
 			<div class="col-md">
-					<input type="file" name="upload" class="form-group" accept="application/pdf" id="upload_aadhar" required/><br/>
-					<a href="form1.html"  class="btn btn-primary" id="fill_form" style="margin:0px auto;">Upload Result</a>
+					<input type="file" name="upload" class="form-group" accept=".xls,.xlsx" id="upload_result" required/><br/>
+					<a href="../upload_result.php" class="btn btn-primary" id="fill_result" style="margin:0px auto;">Upload Result</button>
 			</div>
 		</div>
 	</div>

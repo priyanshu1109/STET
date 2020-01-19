@@ -154,7 +154,7 @@ function addBioData(){
 					mobile_number : form.mobile_number.value,
 					education : form.education.value,
 					marks_type : form.marks_type.value,
-					aadhar : "aadhar.jpg",
+					aadhar : "aadhar.pdf",
 					profile : "profile.jpg",
 					sign : "sign.jpg",
 					paper_type : form.paper_type.value,
@@ -176,9 +176,10 @@ function addDocuments(){
 	var ua = document.getElementById("upload_aadhar").files[0];
 	var up = document.getElementById("upload_photo").files[0];
 	var us = document.getElementById("upload_signature").files[0];
-	//firebase.storage().ref().child("users/"+uid+"/aadhar.pdf").put(ua);
-	firebase.storage().ref().child("users/"+uid+"/profile.jpg").put(up);
-	firebase.storage().ref().child("users/"+uid+"/sign.jpg").put(us);
+	firebase.storage().ref().child("users/"+uid+"/sign.jpg").put(us)
+	firebase.storage().ref().child("users/"+uid+"/aadhar.pdf").put(ua)
+	firebase.storage().ref().child("users/"+uid+"/profile.jpg").put(up)
+	
 	firebase.firestore().collection("users").where("uid","==",uid).get().then((snapshot)=>{
 		snapshot.docs.forEach(doc=>{
 			window.application_no = doc.data().application_no	

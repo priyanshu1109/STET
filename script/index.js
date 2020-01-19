@@ -1,6 +1,6 @@
 var db = firebase.firestore()
 
-db.collection("notice").orderBy("date","desc").get().then(function(querySnapshot) {
+db.collection("notice").orderBy("priority","desc").get().then(function(querySnapshot) {
     querySnapshot.forEach(function(doc) {
         // doc.data() is never undefined for query doc snapshots
         var code = `<li><a href="#">`+doc.data().title+`</li><a>`
