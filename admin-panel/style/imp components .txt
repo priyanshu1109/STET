@@ -1,0 +1,78 @@
+
+<!--this is for html  top bar-->
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/y6wEPDwUJNjkzODcwNjcwDxYCHhNWYWxpZGF0ZVJlcXVlc3RNb2RlAgFkZOMb+mVHLlyAKdglUgnjP3pao1W0DP480xduGtMXgFBN" />
+</div>
+
+<div>
+
+  <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="5F9543D2" />
+</div>
+    
+<div class="topdiv">
+    
+    
+    <div class="topbuton container">
+        
+    </div>
+</div>
+<div class="top_banner">
+    <div class="container in_banner">
+      <div class="row">
+        <div class=" logo col-md-3 col-sm-3 col-xs-12">
+            <img id="ctl00_TopLinks1_imgLogoLeft" class="img-responsive" src="sikkim.jpg" style="border-width:0px;" />
+        </div>
+        <div class="banner_text col-md-6 col-sm-6 col-xs-12">
+            <h1>
+                <span id="ctl00_TopLinks1_lblHeader text">Sikkim Teacher Eligibility Test (STET)</span>
+            </h1>
+            <h2>
+                <span id="ctl00_TopLinks1_lblSubHeader">SIKKIM BOARD OF SECONDARY EDUCATION</span>
+            </h2>
+        </div>
+        <div class=" logo col-md-3 col-sm-3 col-xs-12">
+             <img id="ctl00_TopLinks1_imgLogoRight" class="img-responsive pull-right" src="sikkim.jpg" style="border-width:0px;" />
+        </div>
+    </div>
+</div></div>
+<!--this is for css file top bar-->
+.topdiv {
+    height: 4px;
+    background: #222;
+    clear: both;
+}
+.top_banner {
+    height: auto;
+    width: 100%;
+    background: #005ed3;
+    padding: 0px 0px;
+}
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.top_banner {
+    height: auto;
+    width: 100%;
+    background: #005ed3;
+    padding: 0px 0px;
+}
+.banner_text h1 {
+    font-size: 2.1em;
+    text-align: center;
+    color: White;
+    margin: 0;
+    padding: 5px 0;
+    font-weight: normal;
+    font-family: Arial;
+}
+.banner_text h2 {
+    font-size: 1.3em;
+    text-align: center;
+    color: #b2e4fe;
+    margin: 0;
+    padding: 0px 0 0px 0;
+    font-weight: normal;
+}
